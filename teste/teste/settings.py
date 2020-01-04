@@ -81,7 +81,7 @@ DATABASES = {
         'ENGINE': 'djongo',
         'NAME': 'teste_django2',
         'HOST': 'localhost',
-        'PORT': 27017,
+        'PORT': 27010,
         # 'USER': 'db-username',
         # 'PASSWORD': 'password',
         # 'AUTH_SOURCE': 'db-name',
