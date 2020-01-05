@@ -18,3 +18,8 @@ def post_list(request):
         'posts': posts
     }
     return render(request, 'posts_list.html', data)
+
+
+def post_show(request, post_id):
+    post = Post.objects.get(id=post_id)
+    return render(request, 'post_show.html', {'post':post})
