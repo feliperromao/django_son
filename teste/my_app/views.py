@@ -5,7 +5,8 @@ from .models import Post
 # Create your views here.
 
 def home(request):
-    return HttpResponse('Olá mundo!')
+    # return HttpResponse('Olá mundo!')
+    return render(request, 'index.html')
 
 
 def home_with_param(request, post_id):
