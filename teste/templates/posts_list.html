@@ -1,3 +1,19 @@
-<h1>Listaem de Posts</h1>
-<p>Nome: {{name}}</p>
-<p>E-mail: {{email}}</p>
+<h1>Listagem de Posts</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Título</th>
+            <th>Subtitulo</th>
+            <th>Conteudo</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for post in posts %}
+        <tr>
+            <td>{{post.title}}</td>
+            <td>{{post.subtitle}}</td>
+            <td>{{post.content}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
