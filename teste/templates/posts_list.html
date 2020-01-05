@@ -10,7 +10,7 @@
         <div class="card-body">
             <h5 class="card-title">{{post.subtitle}}</h5>
             <p class="card-text">{{post.content}}</p>
-            <a href="/posts/show/{{post.id}}" class="btn btn-primary">Ver Post</a>
+            <a href="{% url 'posts.show' post.id %}" class="btn btn-primary">Ver Post</a>
         </div>
         <div class="card-footer text-muted">
             2 days ago

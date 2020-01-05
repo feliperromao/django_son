@@ -23,6 +23,6 @@ urlpatterns = [
     path('posts/<int:post_id>/', views.home_with_param), # Url com parâmetros
 
     # Posts
-    path('posts/list', views.post_list),
-    path('posts/show/<int:post_id>', views.post_show),
+    path('posts/list', views.post_list, name='posts.list'),
+    path('posts/show/<int:post_id>', views.post_show, name='posts.show'),
 ]
